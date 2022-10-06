@@ -1,0 +1,123 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 14,
+        "name": "Se connecter via le lien mot de passe oublie",
+        "description": "",
+        "id": "login-sogeti;se-connecter-via-le-lien-mot-de-passe-oublie;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 244301400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "MyStepdefs.ClearnDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3235130500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "je suis sur la page de connexion",
+            "match": {
+              "location": "MyStepdefs.je_suis_sur_la_page_de_connexion()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 639039700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "cliquer sur Lost your password?",
+            "match": {
+              "location": "MyStepdefs.cliquer_sur_Lost_your_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 636242200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Saisir un \u0027tes@yopmail.com.toto\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027tes@yopmail.com.toto\u0027",
+                  "offset": 10
+                }
+              ],
+              "location": "MyStepdefs.saisirUnEmailInvalid(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 60873300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "cliquer sur Reset Password",
+            "match": {
+              "location": "MyStepdefs.cliquer_sur_Reset_Password()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41569100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Un message d’erreur s’affiche \u0027Invalid username or e-mail\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Invalid username or e-mail\u0027",
+                  "offset": 30
+                }
+              ],
+              "location": "MyStepdefs.un_message_d_erreur_s_affiche(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@prod"
+          },
+          {
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Login Sogeti",
+    "description": "",
+    "id": "login-sogeti",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": [
+      {
+        "name": "@prod",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
